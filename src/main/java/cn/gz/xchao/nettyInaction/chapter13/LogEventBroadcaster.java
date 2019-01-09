@@ -30,6 +30,7 @@ public class LogEventBroadcaster {
 		long pointer = 0;
 		for (;;) {
 			long len = file.length();
+			// System.out.println("run");
 			if (len < pointer) {
 				// file was reset
 				pointer = len;
@@ -63,7 +64,7 @@ public class LogEventBroadcaster {
 		// throw new IllegalArgumentException();
 		// }
 		args = new String[2];
-		args[0] = "20000";
+		args[0] = "20001";
 		args[1] = "D:\\aaa.txt";
 		LogEventBroadcaster broadcaster = new LogEventBroadcaster(
 				new InetSocketAddress("255.255.255.255",
