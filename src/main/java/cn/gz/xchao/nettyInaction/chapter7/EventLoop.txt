@@ -1,0 +1,4 @@
+异步传输：一个EventLoopGroup下分配多个EventLoop，一个EventLoop分配一个线程（Thread），一个EventLoop为多个channel服务，
+		所以不要把耗时长的任务放在EventLoop的线程中执行，会阻塞同EventLoop下的其他channel的任务。
+		
+同步传输：一个EventLoopGroup下分配多个EventLoop，一个EventLoop对应分配一个线程(Thread)

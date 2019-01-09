@@ -1,0 +1,6 @@
+Netty提供的传输方式
+1、NIO
+2、Epoll	 linux下专属，比传统Nio要快,EpollEventLoopGroup、EpollServerSocketChannel
+3、OIO
+4、Local  用于在虚拟机内部通过管道进行通信
+5、Embedded	用于测试
