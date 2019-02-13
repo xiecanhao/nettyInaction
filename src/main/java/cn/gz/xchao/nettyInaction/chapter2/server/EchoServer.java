@@ -45,7 +45,6 @@ public class EchoServer {
 						protected void initChannel(SocketChannel ch)
 								throws Exception {
 							ch.pipeline().addLast(serverhandler);
-
 						}
 
 					});
